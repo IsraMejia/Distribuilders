@@ -4,7 +4,8 @@ import socket
 import time
 import random
 from datetime import datetime, timedelta 
-
+Como hago que mi objeto ClienteBerkeley tenga el atributo hora_desfasada que sera asignado a simismo una vez 
+que se ejecuta el metodo getHoraCliente
 class ClienteBerkeley:
     def __init__(self, servidor_ip, servidor_puerto):
         """
