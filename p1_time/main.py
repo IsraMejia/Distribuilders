@@ -30,5 +30,5 @@ for cliente_socket, diferencia_tiempo in zip(clientes_sockets, diferencias_tiemp
 for cliente_socket in clientes_sockets:
     cliente_socket.close()
 
-# Cerrar conexión del servidor
+# Cerrar conexión del servidor 
 servidor.cerrar_servidor()
