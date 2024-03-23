@@ -1,4 +1,3 @@
-#Archivo main
 from servidor import ServidorBerkeley
 from cliente import ClienteBerkeley
 
@@ -17,7 +16,7 @@ servidor.iniciar_servidor()
 clientes_sockets = [servidor.aceptar_conexion_cliente() for _ in range(3)]  # Acepta conexiones de los 3 clientes
 
 # Recibir el tiempo actual de cada cliente
-tiempos_clientes = [servidor.recibir_tiempo_cliente(cliente_socket) for cliente_socket in clientes_sockets]
+tiempos_clientes = [servidor.getHoraCliente(cliente_socket) for cliente_socket in clientes_sockets]
 
 # Calcular la diferencia de tiempo entre cada cliente y el servidor
 diferencias_tiempo = [servidor.calcular_diferencia_tiempo(tiempo_cliente) for tiempo_cliente in tiempos_clientes]
